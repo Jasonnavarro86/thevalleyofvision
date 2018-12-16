@@ -1,4 +1,4 @@
 module.exports = {
   
-    home: require('./homeModel')
+    users: require('./userModel')
   };

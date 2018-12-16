@@ -1,7 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const routes = require('./routes')
-
 const PORT = process.env.PORT || 3001
 
 const app = express();
@@ -16,6 +15,7 @@ app.use(bodyParser.json())
 //Server static files
 app.use(express.static("client/build"))
 // Add routes, both API and view
+
 app.use(routes)
 
 
