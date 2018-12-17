@@ -12,8 +12,10 @@ export default {
     deleteOne: function(path, id) {
         return axios.delete('/api/' + path +'/'+ id);
     },
-  
     saveOne: function(path, Data) {
         return axios.post('/api/' + path, Data);
+    },
+    updateOne: function(path,id, Data){
+        return axios.put('/api/' + path +'/'+ id, Data);
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
-import {Home} from './pages'
+import {TestPage, Home} from './pages'
 
 
 
@@ -10,7 +10,7 @@ const App = () =>
   
       <div>
        <Route exact path ="/" component={Home}/>
-     
+       <Route exact path ="/TestPage" component={TestPage}/>
       </div>
 
 </Router>

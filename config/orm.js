@@ -28,7 +28,10 @@ function objToSql(ob) {
 
         if (Object.hasOwnProperty.call(ob, key)) {
 
-            if (typeof value === "string" && value.indexOf(" ") >= 0) {
+            // if (typeof value === "string" && value.indexOf(" ") >= 0) {
+            //     value = "'" + value + "'";
+            // }
+            if (typeof value === "string") {
                 value = "'" + value + "'";
             }
 
@@ -51,7 +54,20 @@ var orm = {
      */
     all: function (tableName, cb) {
         var queryString = "SELECT * FROM " + tableName + ";"
+        console.log('queryString', queryString)
+        // mysql connection
+        connection.query(queryString, function (err, result) {
+            if (err) {
+                throw err;
+            }
+            cb(result);
+        });
 
+    },
+    getOne: function (tableName,id, cb) {
+        var queryString = "SELECT * FROM " + tableName;
+            queryString += " WHERE id = " + id + ";"
+        console.log('queryString', queryString)
         // mysql connection
         connection.query(queryString, function (err, result) {
             if (err) {
@@ -78,7 +94,7 @@ var orm = {
         queryString += printQuestionMarks(vals.length);
         queryString += ") ";
 
-        console.log(queryString);
+        console.log('queryString',queryString);
 
         // mysql connection
         connection.query(queryString, vals, function (err, result) {
@@ -128,7 +144,7 @@ var orm = {
         queryString += " WHERE ";
         queryString += "id= ";
         queryString += id;
-
+        console.log('queryString', queryString)
         // mysql connection
         connection.query(queryString, function (err, result) {
             if (err) {

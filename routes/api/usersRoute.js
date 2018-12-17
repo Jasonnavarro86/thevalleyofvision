@@ -10,7 +10,7 @@ router.route("/")
 
 router
 .route("/:id")
-// .get(usersController.findFaceBookId)
+.get(usersController.getOne)
 .put(usersController.update)
 .delete(usersController.delete);
 

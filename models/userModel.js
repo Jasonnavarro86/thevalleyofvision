@@ -14,7 +14,12 @@ var users = {
             cb(result)
         })
     },
+    getOne: function (id, cb) {
+        orm.getOne("user_table", id, function (result) {
 
+            cb(result)
+        })
+    },
     /**
      * @param {array} cols - first name, last name , email.
      * @param {array} vals - enter vals in array [].
