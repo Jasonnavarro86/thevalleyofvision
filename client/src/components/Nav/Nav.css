@@ -30,11 +30,11 @@ button:hover {
 /*Brand logo*/
 .navbar-brand {
     font-family: 'Covered By Your Grace', cursive;
-    font-size: 44px;
+    font-size: 47px;
     color:gold !important;
     
     padding: 0px;
-    margin-left: 242px;
+    margin-left: 195px;
 }
 .navbar-brand.scrolled {
     color: #333;
@@ -56,7 +56,7 @@ button:hover {
 
 .loginMainRow{
     position: fixed;
-    right: 170px;
+    right: 220px;
 }
 .navLoginBtn{
     position: absolute;
@@ -71,3 +71,97 @@ button:hover {
 #loginBtn {
     font-weight: bold;
 }
+@media only screen and (max-width: 1256px) {
+    .navbar-brand {
+       
+        font-size: 44px;
+        margin-left: 202px;
+    }
+  }
+  @media only screen and (max-width: 1244px) {
+    .navbar-brand {
+        
+         font-size: 44px;
+         margin-left: 142px;
+     }
+ 
+  }
+  @media only screen and (max-width: 1127px) {
+    .navbar-brand {
+        font-size: 40px;
+        margin-left:130px;
+    }
+    .loginMainRow{
+        position: fixed;
+        right: 150px;
+    }
+  }
+  
+  @media only screen and (max-width: 1026px) {
+    .navbar-brand {
+        font-size: 37px;
+        margin-left:100px;
+        margin-top: 10px;
+    }
+    .loginMainRow{
+        position: fixed;
+        right: 130px;
+    }
+  }
+  @media only screen and (max-width: 976px) {
+    .navbar-brand {
+        font-size: 36px;
+        margin-left:120px;
+        margin-top: 10px
+    }
+    .loginMainRow{
+        position: fixed;
+        right: 100px;
+    }
+  }
+  @media only screen and (max-width: 921px) {
+    .navbar-brand {
+        font-size: 32px;
+        margin-left:100px;
+        margin-top: 10px
+    }
+    .loginMainRow{
+        position: fixed;
+        right: 80px;
+    }
+  }
+  @media only screen and (max-width: 864px) {
+    .navbar-brand {
+        font-size: 32px;
+        margin-left:44px;
+        margin-top: 10px
+    }
+    .loginMainRow{
+        position: fixed;
+        right: 50px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .navbar-brand {
+        font-size: 32px;
+        margin-left:39px;
+        margin-top: 10px
+    }
+    .loginMainRow{
+        position: fixed;
+        right: 30px;
+    }
+  }
+  @media only screen and (max-width: 755px) {
+    .navbar-brand {
+        width: 100% !important;
+        text-align: center;
+        margin: 0px;
+        margin-top: 5px;
+        font-size: 33px;
+    }
+    .loginMainRow{
+        display: none;
+    }
+ 
+  }

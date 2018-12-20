@@ -58,18 +58,19 @@ export class Home extends React.Component {
         <div className="row">
           <div className="col-12  jumbotron homeJumbo">
             <div className="row" >
-              <div className="col-7">
+              <div className="col-sm-6 col-md-6 col-lg-6 ">
                 <div className="row justify-content-around">
-                  <blockquote className="blockquote text-center col-8 homeQuote" >
+                  <blockquote className="blockquote text-center col-md-12 col-lg-10 homeQuote" >
                     <br />
                     <p className="homeQuoteP" >But the one who endures to the end will be saved.</p>
                     <footer className="blockquote-footer">Matthew <cite title="Source Title">24:13</cite></footer>
                   </blockquote>
                 </div>
               </div>
+              <div className="hideCol col-1"></div>
               <div className="col">
-               
-              <h1 className="text-left mb-0 createAccountH1" >Create a New Account</h1>
+
+                <h1 className="text-left mb-0 createAccountH1" >Create a New Account</h1>
                 <p className="text-left mb-3 createAccountTopP">and experience the discipleship.</p>
                 <form>
                   <div className="form-row">
@@ -81,14 +82,14 @@ export class Home extends React.Component {
                     </div>
                   </div>
                   <div className="form-group">
-                    <input type="email" className="form-control" id="email" placeholder="Email" />
+                    <input type="email" className="form-control" id="signUpEmail" placeholder="Email" />
                   </div>
                   <div className="form-group">
                     <input type="text" className="form-control" id="newPassword" placeholder="New Password" />
                   </div>
                   <div className="form-row">
                     <div className="form-group col-md-12">
-                      <label for="month">Birthday</label>
+                      <label htmlFor="month">Birthday</label>
                       <div className="row">
 
                         <select id="month" className="form-control col-2 birthdaySelects">
@@ -141,11 +142,11 @@ export class Home extends React.Component {
 
                         </select>
                         <select id="year" className="form-control col-2 birthdaySelects" >
-                          
-                          
+
+
                         </select>
-                        <a href="#year" className="col birthdayAnchor"> 
-                        Why do I need to provide my birthday?
+                        <a href="#year" className="col birthdayAnchor">
+                          Why do I need to provide my birthday?
                         </a>
                       </div>
                     </div>
@@ -154,16 +155,16 @@ export class Home extends React.Component {
                   <div className="form-row ml-2">
                     <div className="">
                       <input type="radio" id="female" className="mr-1" />
-                      <label className="" for="female">Female</label>
+                      <label className="" htmlFor="female">Female</label>
                     </div>
                     <div className=" ml-4">
                       <input type="radio" id="male" className="mr-1" />
-                      <label className="" for="male">Male</label>
+                      <label className="" htmlFor="male">Male</label>
                     </div>
                   </div>
                   <div className="form-row mt-3 col-9 signUpPolicy">
-                  <p>
-                  By clicking Sign Up, you agree to our <a href="#term">Terms</a>, <a href="#data">Data Policy</a> and <a href="#cookies">Cookies Policy</a>.
+                    <p>
+                      By clicking Sign Up, you agree to our <a href="#term">Terms</a>, <a href="#data">Data Policy</a> and <a href="#cookies">Cookies Policy</a>.
                   </p>
                   </div>
                   <button type="submit" className="btn mt-4 signUpBtn">Sign Up</button>
@@ -173,10 +174,41 @@ export class Home extends React.Component {
               </div>
             </div>
           </div>
+          <div className="col-12  jumbotron homeJumboMobil">
+            <div className="input-group input-group-sm mb-3 mobilDivInput">
+
+              <input id="mobilEmail" type="text" className="form-control " style={{ borderBottom: '0px', borderBottomLeftRadius: "0px", borderBottomRightRadius: "0px" }} placeholder="Email" />
+
+            </div>
+            <div className="input-group input-group-sm mb-3 mobilDivInput">
+
+              <input id="mobilPassword" type="text" className="form-control" placeholder="Password" style={{ borderTopLeftRadius: "0px", borderTopRightRadius: "0px", boxShadow: "0px 1px #e0dcdc" }} />
+
+            </div>
+            <button className="btn btn-sm mt-2" style={{ width: '100%', color:'white', fontWeight:'bold', backgroundColor:"#212121" }}> Log In</button>
+            <div className="row mt-2">
+              <div className='col ml-1'>
+                <hr />
+              </div>
+              <div className='col-1 text-center'>
+              or
+              </div>
+              <div className='col mr-1'>
+                <hr />
+              </div>
+            </div>
+            <div className="row justify-content-center">
+            <button className="btn btn-success col-5" style={{padding:'3px', fontSize:'12px'}}>Create New Account</button>
+            </div>
+           
+          </div>
+          
           <br />
 
         </div>
-
+        <div className="row text-center">
+            <p className='col' style={{fontSize:'11px'}}>&copy; TheValleyOnline 2018</p>
+            </div>
         {/* <a href="/TestPage">Test Page found at '/TestPage'</a>*/}
         <Footer />
       </div>
