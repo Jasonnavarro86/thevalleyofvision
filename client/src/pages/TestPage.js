@@ -48,11 +48,11 @@ render(){
 
     return(
       <div>
-       <button onClick={()=>this.testRoute(5)}>Create</button>
-       <button onClick={()=>this.testRoute2(5)}>Get All</button>
-       <button onClick={()=>this.testRoute3(4)}>Get One</button>
-       <button onClick={()=>this.testRoute4(3)}>Delete</button>
-       <button onClick={()=>this.testRoute5(4)}>Update</button>
+       <button className="btn btn-dark" onClick={()=>this.testRoute(5)}>Create</button>
+       <button className="btn btn-dark" onClick={()=>this.testRoute2(5)}>Get All</button>
+       <button className="btn btn-dark" onClick={()=>this.testRoute3(4)}>Get One</button>
+       <button className="btn btn-dark" onClick={()=>this.testRoute4(3)}>Delete</button>
+       <button className="btn btn-dark" onClick={()=>this.testRoute5(4)}>Update</button>
       </div>
           )
 

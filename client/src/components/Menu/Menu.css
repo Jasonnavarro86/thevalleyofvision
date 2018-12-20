@@ -19,6 +19,7 @@
     padding-top: 78.5px;
     
 }
+
 #menu.scrolled{
     margin-top: 78.5px;
     padding-top: 0px;
@@ -52,4 +53,16 @@ ul li {
 .menuUl{
     padding-top: 70px;
     
+}
+.main-social-media-anchors{
+    float: left;
+    position: absolute;
+    top: 78px;
+    left: 80px;
+    
+}
+.main-social-media-anchors a {
+    padding-right: 20px;
+    font-size: 20px;
+    color: #000000 !important;
 }
