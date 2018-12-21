@@ -45,18 +45,20 @@ export class Home extends React.Component {
       }
     });
   }
-
+   mobilSignUp = function(){
+    window.location.href = "/SignUp/cid=03";
+  }
   render() {
 
     return (
       <div id='mainDiv'>
         <Nav />
         <Menu />
-        <br />
+      
         <br />
         <br />
         <div className="row">
-          <div className="col-12  jumbotron homeJumbo">
+          <div className="col-12 jumbotron homeJumbo">
             <div className="row" >
               <div className="col-sm-6 col-md-6 col-lg-6 ">
                 <div className="row justify-content-around">
@@ -69,7 +71,6 @@ export class Home extends React.Component {
               </div>
               <div className="hideCol col-1"></div>
               <div className="col">
-
                 <h1 className="text-left mb-0 createAccountH1" >Create a New Account</h1>
                 <p className="text-left mb-3 createAccountTopP">and experience the discipleship.</p>
                 <form>
@@ -91,7 +92,6 @@ export class Home extends React.Component {
                     <div className="form-group col-md-12">
                       <label htmlFor="month">Birthday</label>
                       <div className="row">
-
                         <select id="month" className="form-control col-2 birthdaySelects">
                           <option >Jan</option>
                           <option >Feb</option>
@@ -107,7 +107,6 @@ export class Home extends React.Component {
                           <option >Dec</option>
                         </select>
                         <select id="day" className="form-control col-2 birthdaySelects">
-
                           <option>01</option>
                           <option>02</option>
                           <option>03</option>
@@ -139,11 +138,8 @@ export class Home extends React.Component {
                           <option>29</option>
                           <option>30</option>
                           <option>31</option>
-
                         </select>
                         <select id="year" className="form-control col-2 birthdaySelects" >
-
-
                         </select>
                         <a href="#year" className="col birthdayAnchor">
                           Why do I need to provide my birthday?
@@ -176,14 +172,10 @@ export class Home extends React.Component {
           </div>
           <div className="col-12  jumbotron homeJumboMobil">
             <div className="input-group input-group-sm mb-3 mobilDivInput">
-
               <input id="mobilEmail" type="text" className="form-control " style={{ borderBottom: '0px', borderBottomLeftRadius: "0px", borderBottomRightRadius: "0px" }} placeholder="Email" />
-
             </div>
             <div className="input-group input-group-sm mb-3 mobilDivInput">
-
               <input id="mobilPassword" type="text" className="form-control" placeholder="Password" style={{ borderTopLeftRadius: "0px", borderTopRightRadius: "0px", boxShadow: "0px 1px #e0dcdc" }} />
-
             </div>
             <button className="btn btn-sm mt-2" style={{ width: '100%', color:'white', fontWeight:'bold', backgroundColor:"#212121" }}> Log In</button>
             <div className="row mt-2">
@@ -198,18 +190,14 @@ export class Home extends React.Component {
               </div>
             </div>
             <div className="row justify-content-center">
-            <button className="btn btn-success col-5" style={{padding:'3px', fontSize:'12px'}}>Create New Account</button>
+            <button className="btn btn-success col-5" style={{padding:'3px', fontSize:'12px'}} onClick={()=>{this.mobilSignUp()}}>Create New Account</button>
             </div>
-           
           </div>
-          
           <br />
-
         </div>
         <div className="row text-center">
             <p className='col' style={{fontSize:'11px'}}>&copy; TheValleyOnline 2018</p>
             </div>
-        {/* <a href="/TestPage">Test Page found at '/TestPage'</a>*/}
         <Footer />
       </div>
     )

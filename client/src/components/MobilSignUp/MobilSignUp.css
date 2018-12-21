@@ -1,0 +1,22 @@
+.signUpBars {
+    background-color: #D9D7D7;
+    height: 6px
+}
+.nameBar {
+
+}
+.birthDayBar{
+margin-left: 1px;
+}
+
+.emailBar{
+    margin-left: 1px;
+}
+
+.genderBar {
+    margin-left: 1px;
+}
+
+.choosePasswordBar{
+    margin-left: 1px;
+}
