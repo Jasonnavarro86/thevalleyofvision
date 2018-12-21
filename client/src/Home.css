@@ -11,9 +11,11 @@ label {
 .homeJumbo {
     padding-top: 27px;
 }
-.homeJumboMobil{
-display: none;
+
+.homeJumboMobil {
+    display: none;
 }
+
 /* Quote on Home page Section */
 
 .homeQuote {
@@ -53,77 +55,84 @@ display: none;
 }
 
 .signUpBtn {
-    width:160px;
-    font-size:23px;
-    padding:0px 4px;
-    font-weight:bold;
-    border:1px solid darkgreen;
-    background-image:linear-gradient(#71bd71, green);
-    color:white;
+    width: 160px;
+    font-size: 23px;
+    padding: 0px 4px;
+    font-weight: bold;
+    border: 1px solid darkgreen;
+    background-image: linear-gradient(#71bd71, green);
+    color: white;
 }
 
 /* Mobil Section */
-.mobilDivInput{
+
+.mobilDivInput {
     margin: 0px !important;
 }
+
 /* Media Queries */
+
 @media only screen and (max-width: 1256px) {
-    .createAccountH1{
+    .createAccountH1 {
         font-size: 40px;
     }
- 
-  }
-  @media only screen and (max-width: 1244px) {
-    .hideCol{
+}
+
+@media only screen and (max-width: 1244px) {
+    .hideCol {
         display: none;
     }
- 
-  }
+}
+
 @media only screen and (max-width: 1127px) {
-    .createAccountH1{
+    .createAccountH1 {
         font-size: 35px;
     }
-  }
+}
 
-  @media only screen and (max-width: 1026px) {
-    .createAccountH1{
+@media only screen and (max-width: 1026px) {
+    .createAccountH1 {
         font-size: 30px;
     }
     .createAccountTopP {
         font-size: 15px;
     }
-    .signUpBtn{
-        width:140px;
-        font-size:18px;
+    .signUpBtn {
+        width: 140px;
+        font-size: 18px;
     }
     .homeQuote {
         font-size: 20px;
         padding: 0px;
     }
-  }
-  @media only screen and (max-width: 976px) {
-    .createAccountH1{
+}
+
+@media only screen and (max-width: 976px) {
+    .createAccountH1 {
         font-size: 25px;
     }
     .createAccountTopP {
         font-size: 13px;
     }
-  }
-  @media only screen and (max-width: 800px) {
-    .createAccountH1{
+}
+
+@media only screen and (max-width: 800px) {
+    .createAccountH1 {
         font-size: 25px;
     }
- 
-  }
-  @media only screen and (max-width: 755px) {
-      body {
-          overflow: hidden;
-      }
-.homeJumbo {
-    display: none;
 }
-.homeJumboMobil{
-    display: block;
+
+@media only screen and (max-width: 755px) {
+    body {
+        overflow: hidden;
+    }
+    .homeJumbo {
+        display: none;
+    }
+    .homeJumboMobil {
+        display: block;
+    }
+    .xs-br {
+        display: none;
+    }
 }
- 
-  }

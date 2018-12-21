@@ -6,7 +6,6 @@ export const Nav = (props) =>
     <nav id="navBar" className="navbar navbar-dark bg-dark fixed-top">
       <a className="navbar-brand" href="#footer"> THE VALLEY OF VISION </a>
       {/* Log in*/}
-     
       <div className="row loginMainRow">
         <div className="col-5 mr-1" style={{padding:'0px'}}>
           <label htmlFor="email" className="control-label">Email</label>

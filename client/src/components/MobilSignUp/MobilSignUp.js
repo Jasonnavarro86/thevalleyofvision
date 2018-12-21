@@ -6,25 +6,25 @@ export const MobilSignUp = (props) =>
     <div className="row">
         <div className="col-12" style={{ padding: '0px' }}>
             <div className="row" style={{ width: "100%" }}>
-                <div className="col signUpBars nameBar" style={{ backgroundColor: 'darkGrey' }}>
+                <div className="col signUpBars nameBar selectedBar" >
                 </div>
-                <div className="col signUpBars birthDayBar">
+                <div className="col signUpBars birthdayBar">
                 </div>
                 <div className="col signUpBars emailBar">
                 </div>
                 <div className="col signUpBars genderBar">
                 </div>
-                <div className="col signUpBars choosePasswordBar">
+                <div className="col signUpBars newPasswordBar">
                 </div>
             </div>
         </div>
         <div className="col-12 jumbotron mobilSignUpJumbo" style={{ minHeight: '100vh' }}>
-            <div className="nameGroup d-none">
+            <div className="nameGroup">
 
                 <div className="row">
                     <div className="col text-center">
                         <p style={{ fontFamily: 'anton' }}> Whats your name? </p>
-                        <p style={{ fontFamily: 'Montserrat', fontSize: '8px', color:'gray' }}> Enter the name you use in real life </p>
+                        <p style={{ fontFamily: 'Montserrat', fontSize: '12px', color:'gray' }}> Enter the name you use in real life. </p>
                     </div>
                 </div>
                 <div className="form-row">
@@ -38,7 +38,7 @@ export const MobilSignUp = (props) =>
                     </div>
                 </div>
                 <div className="row justify-content-center mt-4">
-                    <button className="btn col-5 nameNextBtn" style={{ height: '25px', padding: '0px', fontWeight: 'bold', fontSize: '14px', color: 'white', backgroundColor: "#212121" }}> Next</button>
+                    <button className="btn col-5 nameNextBtn" onClick={()=>{props.switchSignUpQuestion("nameGroup")}} style={{ height: '25px', padding: '0px', fontWeight: 'bold', fontSize: '14px', color: 'white', backgroundColor: "#212121" }}> Next</button>
                 </div>
                 <br />
                 <br />
@@ -47,11 +47,11 @@ export const MobilSignUp = (props) =>
 
 
             </div>
-            <div className="birthDayGroup d-none" >
+            <div className="birthdayGroup d-none" >
                 <div className="row">
                 <div className="col text-center">
                         <p style={{ fontFamily: 'anton' }}> Whats your birthday? </p>
-                        <p style={{ fontFamily: 'Montserrat', fontSize: '8px', color:'gray' }}> Choose your birthdate. This is kept private. </p>
+                        <p style={{ fontFamily: 'Montserrat', fontSize: '12px', color:'gray' }}> Choose your birthdate. This is kept private. </p>
                     </div>
                 </div>
                 <div className="form-row">
@@ -113,10 +113,10 @@ export const MobilSignUp = (props) =>
 
                   </div>
                 <div className="row justify-content-center mt-4">
-                    <button className="btn col-5 birthdayNextBtn" style={{ height: '25px', padding: '0px', fontWeight: 'bold', fontSize: '18px', color: 'white', backgroundColor: "#212121" }}> Next</button>
+                    <button className="btn col-5 birthdayNextBtn" onClick={()=>{props.switchSignUpQuestion("birthdayGroup")}} style={{ height: '25px', padding: '0px', fontWeight: 'bold', fontSize: '14px', color: 'white', backgroundColor: "#212121" }}> Next</button>
                 </div>
             </div>
-            <div className="emailGroup">
+            <div className="emailGroup d-none">
             <div className="row">
                 <div className="col text-center">
                         <p style={{ fontFamily: 'anton' }}> Enter you email </p>
@@ -131,7 +131,44 @@ export const MobilSignUp = (props) =>
                     </div>
                 </div>
                 <div className="row justify-content-center mt-4">
-                    <button className="btn col-5 emailNextBtn" style={{ height: '25px', padding: '0px', fontWeight: 'bold', fontSize: '14px', color: 'white', backgroundColor: "#212121" }}> Next</button>
+                    <button className="btn col-5 emailNextBtn" onClick={()=>{props.switchSignUpQuestion("emailGroup")}} style={{ height: '25px', padding: '0px', fontWeight: 'bold', fontSize: '14px', color: 'white', backgroundColor: "#212121" }}> Next</button>
+                </div>
+            </div>
+            
+
+            <div className="genderGroup d-none">
+            <div className="row">
+                <div className="col text-center">
+                        <p style={{ fontFamily: 'anton' }}> Enter you email </p>
+                        <p style={{ fontFamily: 'Montserrat', fontSize: '12px', color:'gray' }}> Enter the email where you can be reached. This is kept private. </p>
+                    </div>
+                </div>
+                <div className="form-row">
+                   
+                    <div className="col text-left form-group" >
+                        
+                    </div>
+                </div>
+                <div className="row justify-content-center mt-4">
+                    <button className="btn col-5 genderNextBtn" onClick={()=>{props.switchSignUpQuestion("genderGroup")}} style={{ height: '25px', padding: '0px', fontWeight: 'bold', fontSize: '14px', color: 'white', backgroundColor: "#212121" }}> Next</button>
+                </div>
+            </div>
+            <div className="newPasswordGroup d-none">
+            <div className="row">
+                <div className="col text-center">
+                        <p style={{ fontFamily: 'anton' }}> Enter you email </p>
+                        <p style={{ fontFamily: 'Montserrat', fontSize: '12px', color:'gray' }}> Enter the email where you can be reached. This is kept private. </p>
+                    </div>
+                </div>
+                <div className="form-row">
+                   
+                    <div className="col text-left form-group" >
+                        <label htmlFor="mobilNewPassword" style={{ fontSize: '12px' }}>Password</label>
+                        <input className="col" type="text" id="mobilNewPassword" />
+                    </div>
+                </div>
+                <div className="row justify-content-center mt-4">
+                    <button className="btn col-5 newPasswordNextBtn" onClick={()=>{props.switchSignUpQuestion("newPasswordGroup")}} style={{ height: '25px', padding: '0px', fontWeight: 'bold', fontSize: '14px', color: 'white', backgroundColor: "#212121" }}> Next</button>
                 </div>
             </div>
             <br />

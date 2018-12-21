@@ -5,7 +5,7 @@
 .nameBar {
 
 }
-.birthDayBar{
+.birthdayBar{
 margin-left: 1px;
 }
 
@@ -17,6 +17,10 @@ margin-left: 1px;
     margin-left: 1px;
 }
 
-.choosePasswordBar{
+.newPasswordBar{
     margin-left: 1px;
+}
+
+.selectedBar {
+    background-color: darkGrey;
 }
