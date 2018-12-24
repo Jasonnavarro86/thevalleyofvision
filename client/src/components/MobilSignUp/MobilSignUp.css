@@ -2,14 +2,14 @@
     background-color: #D9D7D7;
     height: 6px
 }
-.nameBar {
 
-}
-.birthdayBar{
-margin-left: 1px;
+.nameBar {}
+
+.birthdayBar {
+    margin-left: 1px;
 }
 
-.emailBar{
+.emailBar {
     margin-left: 1px;
 }
 
@@ -17,10 +17,20 @@ margin-left: 1px;
     margin-left: 1px;
 }
 
-.newPasswordBar{
+.newPasswordBar {
     margin-left: 1px;
 }
 
 .selectedBar {
     background-color: darkGrey;
+}
+
+.keepWidth400 {
+    width:400px;
+}
+
+@media only screen and (max-width: 740px) {
+    .mobilHideExpanded {
+        display: block !important;
+    }
 }
