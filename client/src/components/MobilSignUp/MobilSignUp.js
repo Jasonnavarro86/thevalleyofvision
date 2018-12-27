@@ -20,19 +20,19 @@ export const MobilSignUp = (props) =>
                 </div>
             </div>
             <div className="col-12 jumbotron mobilSignUpJumbo" style={{ minHeight: '100vh' }}>
-            <div className='row'>
-            <div className="col"></div>
-            <div className="keepWidth400 col">
+            <div className='row justify-content-around'>
+            
+            <div className="keepWidth400 col-7">
              
                 <div className="nameGroup">
 
                     <div className="row">
                         <div className="col text-center">
-                            <p style={{ fontFamily: 'anton' }}> Whats your name? </p>
+                            <p style={{ fontFamily: 'anton', fontSize: '20px'}}> Whats your name? </p>
                             <p style={{ fontFamily: 'Montserrat', fontSize: '12px', color: 'gray' }}> Enter the name you use in real life. </p>
                         </div>
                     </div>
-                    <div className="form-row mt-2">
+                    <div className="form-row mt-4">
                         <div className="col text-left form-group">
                             <label htmlFor="mobilFirstName" style={{ fontSize: '12px' }}>First Name</label>
                             <input type="text" id="mobilFirstName" />
@@ -55,7 +55,7 @@ export const MobilSignUp = (props) =>
                 <div className="birthdayGroup d-none" >
                     <div className="row">
                         <div className="col text-center">
-                            <p style={{ fontFamily: 'anton' }}> Whats your birthday? </p>
+                            <p style={{ fontFamily: 'anton', fontSize: '20px'}}> Whats your birthday? </p>
                             <p style={{ fontFamily: 'Montserrat', fontSize: '12px', color: 'gray' }}> Choose your birthdate. This is kept private. </p>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ export const MobilSignUp = (props) =>
                         <div className="form-group col-md-12">
                             <label htmlFor="mobilMonth" style={{ fontSize: '12px' }}>Birthday</label>
                             <div className="row">
-                                <select id="mobilMonth" className="form-control col-2 mobilBirthdaySelects">
+                                <select id="mobilMonth" className="form-control col mobilBirthdaySelects">
                                     <option >Jan</option>
                                     <option >Feb</option>
                                     <option >Mar</option>
@@ -77,7 +77,7 @@ export const MobilSignUp = (props) =>
                                     <option >Nov</option>
                                     <option >Dec</option>
                                 </select>
-                                <select id="mobilDay" className="form-control col-2 ml-1 mobilBirthdaySelects">
+                                <select id="mobilDay" className="form-control col ml-1 mobilBirthdaySelects">
                                     <option>01</option>
                                     <option>02</option>
                                     <option>03</option>
@@ -110,7 +110,7 @@ export const MobilSignUp = (props) =>
                                     <option>30</option>
                                     <option>31</option>
                                 </select>
-                                <select id="mobilYear" className="form-control col-2 ml-1 mobilBirthdaySelects" >
+                                <select id="mobilYear" className="form-control col ml-1 mobilBirthdaySelects" >
                                 </select>
 
                             </div>
@@ -124,7 +124,7 @@ export const MobilSignUp = (props) =>
                 <div className="emailGroup d-none">
                     <div className="row">
                         <div className="col text-center">
-                            <p style={{ fontFamily: 'anton' }}> Enter you email </p>
+                            <p style={{ fontFamily: 'anton', fontSize: '20px'}}> Enter you email </p>
                             <p style={{ fontFamily: 'Montserrat', fontSize: '12px', color: 'gray' }}> Enter the email where you can be reached. This is kept private. </p>
                         </div>
                     </div>
@@ -144,7 +144,7 @@ export const MobilSignUp = (props) =>
                 <div className="genderGroup d-none">
                     <div className="row">
                         <div className="col text-center">
-                            <p style={{ fontFamily: 'anton' }}> Whats your gender? </p>
+                            <p style={{ fontFamily: 'anton', fontSize: '20px'}}> Whats your gender? </p>
                             <p style={{ fontFamily: 'Montserrat', fontSize: '11px', color: 'gray' }}> Select your gender. </p>
                         </div>
                     </div>
@@ -170,7 +170,7 @@ export const MobilSignUp = (props) =>
                 <div className="newPasswordGroup d-none">
                     <div className="row">
                         <div className="col text-center">
-                            <p style={{ fontFamily: 'anton' }}> Choose a Password </p>
+                            <p style={{ fontFamily: 'anton', fontSize: '20px'}}> Choose a Password </p>
                             <p style={{ fontFamily: 'Montserrat', fontSize: '12px', color: 'gray' }}> Create a password with at least 6 characters. It should be something others couldnt guess.</p>
                         </div>
                     </div>
@@ -190,7 +190,7 @@ export const MobilSignUp = (props) =>
                     <p className='col mt-5' style={{ fontSize: '11px' }}>&copy; TheValleyOnline 2018</p>
                 </div>
                 </div>
-                <div className="col"></div>
+                <div className="col d-none"></div>
                 </div>
             </div>
     </div>
