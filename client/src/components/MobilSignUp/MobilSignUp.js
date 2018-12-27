@@ -22,17 +22,17 @@ export const MobilSignUp = (props) =>
             <div className="col-12 jumbotron mobilSignUpJumbo" style={{ minHeight: '100vh' }}>
             <div className='row justify-content-around'>
             
-            <div className="keepWidth400 col-7">
+            <div className="keepWidth400 col-7 mt-2">
              
                 <div className="nameGroup">
 
                     <div className="row">
                         <div className="col text-center">
-                            <p style={{ fontFamily: 'anton', fontSize: '20px'}}> Whats your name? </p>
-                            <p style={{ fontFamily: 'Montserrat', fontSize: '12px', color: 'gray' }}> Enter the name you use in real life. </p>
+                            <p style={{ fontFamily: 'anton', fontSize: '23px'}}> Whats your name? </p>
+                            <p style={{ fontFamily: 'Montserrat', fontSize: '11px', color: 'gray', fontWeight:'bold' }}> Enter the name you use in real life. </p>
                         </div>
                     </div>
-                    <div className="form-row mt-4">
+                    <div className="form-row mt-3">
                         <div className="col text-left form-group">
                             <label htmlFor="mobilFirstName" style={{ fontSize: '12px' }}>First Name</label>
                             <input type="text" id="mobilFirstName" />
@@ -55,11 +55,11 @@ export const MobilSignUp = (props) =>
                 <div className="birthdayGroup d-none" >
                     <div className="row">
                         <div className="col text-center">
-                            <p style={{ fontFamily: 'anton', fontSize: '20px'}}> Whats your birthday? </p>
-                            <p style={{ fontFamily: 'Montserrat', fontSize: '12px', color: 'gray' }}> Choose your birthdate. This is kept private. </p>
+                            <p style={{ fontFamily: 'anton', fontSize: '23px'}}> Whats your birthday? </p>
+                            <p style={{ fontFamily: 'Montserrat', fontSize: '11px', color: 'gray', fontWeight:'bold' }}> Choose your birthdate. This is kept private. </p>
                         </div>
                     </div>
-                    <div className="form-row">
+                    <div className="form-row mt-2">
                         <div className="form-group col-md-12">
                             <label htmlFor="mobilMonth" style={{ fontSize: '12px' }}>Birthday</label>
                             <div className="row">
@@ -124,11 +124,11 @@ export const MobilSignUp = (props) =>
                 <div className="emailGroup d-none">
                     <div className="row">
                         <div className="col text-center">
-                            <p style={{ fontFamily: 'anton', fontSize: '20px'}}> Enter you email </p>
-                            <p style={{ fontFamily: 'Montserrat', fontSize: '12px', color: 'gray' }}> Enter the email where you can be reached. This is kept private. </p>
+                            <p style={{ fontFamily: 'anton', fontSize: '23px'}}> Enter you email </p>
+                            <p style={{ fontFamily: 'Montserrat', fontSize: '11px', color: 'gray', fontWeight:'bold' }}> Enter the email where you can be reached. This is kept private. </p>
                         </div>
                     </div>
-                    <div className="form-row">
+                    <div className="form-row mt-2">
 
                         <div className="col text-left form-group" >
                             <label htmlFor="mobilEmail" style={{ fontSize: '12px' }}>Email</label>
@@ -144,25 +144,23 @@ export const MobilSignUp = (props) =>
                 <div className="genderGroup d-none">
                     <div className="row">
                         <div className="col text-center">
-                            <p style={{ fontFamily: 'anton', fontSize: '20px'}}> Whats your gender? </p>
-                            <p style={{ fontFamily: 'Montserrat', fontSize: '11px', color: 'gray' }}> Select your gender. </p>
+                            <p style={{ fontFamily: 'anton', fontSize: '23px'}}> Whats your gender? </p>
+                            <p style={{ fontFamily: 'Montserrat', fontSize: '11px', color: 'gray', fontWeight:'bold' }}> Select your gender. </p>
                         </div>
                     </div>
-                    <div className="row justify-content-center">
+                    <div className="row justify-content-center mt-3">
 
-                        <div className="custom-control custom-radio col-6">
+                        <div className="custom-control custom-radio col-8">
                             <input type="radio" id="customRadio1" name="customRadio" className="custom-control-input" />
                             <label style={{ fontFamily: "Montserrat", fontSize: "15px", fontWeight: '600' }} className="custom-control-label" for="customRadio1"><i className="fas fa-male"></i> Male</label>
-                        </div>
-                    </div>
-                    <div className="row justify-content-center">
-                        <div className="custom-control custom-radio col-6">
+                       
+                            </div>
+                            <div className="custom-control custom-radio col-8">
                             <input type="radio" id="customRadio2" name="customRadio" className="custom-control-input" />
                             <label style={{ fontFamily: "Montserrat", fontSize: "15px", fontWeight: '600' }} className="custom-control-label" for="customRadio2"><i className="fas fa-female"></i> Female</label>
                         </div>
-
-
                     </div>
+                    
                     <div className="row justify-content-center mt-4">
                         <button className="btn col-5 genderNextBtn" onClick={() => { props.switchSignUpQuestion("genderGroup") }} style={{ height: '25px', padding: '0px', fontWeight: 'bold', fontSize: '14px', color: 'white', backgroundColor: "#212121" }}> Next</button>
                     </div>
@@ -170,11 +168,11 @@ export const MobilSignUp = (props) =>
                 <div className="newPasswordGroup d-none">
                     <div className="row">
                         <div className="col text-center">
-                            <p style={{ fontFamily: 'anton', fontSize: '20px'}}> Choose a Password </p>
-                            <p style={{ fontFamily: 'Montserrat', fontSize: '12px', color: 'gray' }}> Create a password with at least 6 characters. It should be something others couldnt guess.</p>
+                            <p style={{ fontFamily: 'anton', fontSize: '23px'}}> Choose a Password </p>
+                            <p style={{ fontFamily: 'Montserrat', fontSize: '10px', color: 'gray',fontWeight:'bold' }}> Create a password with at least 6 characters. It should be something others couldnt guess.</p>
                         </div>
                     </div>
-                    <div className="form-row">
+                    <div className="form-row mt-2">
 
                         <div className="col text-left form-group" >
                             <label htmlFor="mobilNewPassword" style={{ fontSize: '12px' }}>Password</label>
