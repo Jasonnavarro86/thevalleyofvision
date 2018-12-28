@@ -185,7 +185,7 @@ export const MobilSignUp = (props) =>
                 </div>
                 <br />
                 <div className="row text-center">
-                    <p className='col mt-5' style={{ fontSize: '11px' }}>&copy; TheValleyOnline 2018</p>
+                    <p className='col mt-5' style={{ fontSize: '10px' }}>&copy; SEEKING DAILY BREAD 2018</p>
                 </div>
                 </div>
                 <div className="col d-none"></div>

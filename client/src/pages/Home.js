@@ -36,9 +36,12 @@ export class Home extends React.Component {
                 <div className="row justify-content-around">
                   <blockquote className="blockquote text-center col-md-12 col-lg-10 homeQuote" >
                     <br />
-                    <p className="homeQuoteP" >But the one who endures to the end will be saved.</p>
-                    <footer className="blockquote-footer">Matthew <cite title="Source Title">24:13</cite></footer>
-                  </blockquote>
+                    {/*<p className="homeQuoteP"> <span style={{fontSize:'38px', fontWeight:'Bold'}}>GIVE US</span> <br/><span style={{fontFamily:'cursive', fontSize:'34px'}}> this day </span><br/><span style={{fontSize:'34px', fontWeight:'bold'}}>OUR DAILY</span><br/> <span style={{fontSize:'70px', fontFamily:'cursive'}}>Bread</span></p>*/}
+      {/*<p className="homeQuoteP"> <span style={{fontSize:'28px', fontWeight:'Bold'}}>GIVE US THIS DAY OUR </span><br/> <span style={{fontSize:'40px', fontFamily:'cursive'}}> Daily Bread</span></p>*/}
+                    
+      <footer className="blockquote-footer homeQuoteFooter" style={{fontSize:'40px'}}>Matthew <cite title="Source Title">6:11</cite></footer>
+                  
+                    </blockquote>
                 </div>
               </div>
               <div className="hideCol col-1"></div>
@@ -120,14 +123,14 @@ export class Home extends React.Component {
                     </div>
 
                   </div>
-                  <div className="form-row ml-2">
-                    <div className="">
-                      <input type="radio" id="female" className="mr-1" />
-                      <label className="" htmlFor="female">Female</label>
+                  <div className="form-row ">
+                    <div className="custom-control custom-radio custom-control-inline ml-2">
+                      <input type="radio" id="female" className="mr-1 custom-control-input" name="customRadioInline1" />
+                      <label className="custom-control-label" htmlFor="female">Female</label>
                     </div>
-                    <div className=" ml-4">
-                      <input type="radio" id="male" className="mr-1" />
-                      <label className="" htmlFor="male">Male</label>
+                    <div className="custom-control custom-radio custom-control-inline ml-4">
+                      <input type="radio" id="male" className="mr-1 custom-control-input" name="customRadioInline1"/>
+                      <label className="custom-control-label" htmlFor="male">Male</label>
                     </div>
                   </div>
                   <div className="form-row mt-3 col-9 signUpPolicy">
@@ -168,7 +171,7 @@ export class Home extends React.Component {
           <br />
         </div>
         <div className="row text-center">
-            <p className='col' style={{fontSize:'11px'}}>&copy; TheValleyOnline 2018</p>
+            <p className='col' style={{fontSize:'10px', fontFamily:'Montserrat'}}>&copy; SEEKING DAILY BREAD 2018</p>
             </div>
         <Footer />
       </div>

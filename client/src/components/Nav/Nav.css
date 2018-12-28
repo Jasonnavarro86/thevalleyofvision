@@ -49,8 +49,9 @@ button:hover {
     background-color: #ffffffeb !important;
 }
 .navInput{
-    padding: 0px;
+    padding: 2px;
     height: 25px;
+    font-size: 12px;
 }
 /* login section */
 

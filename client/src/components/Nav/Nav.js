@@ -4,12 +4,12 @@ import "./Nav.css";
 export const Nav = (props) =>
   <div className="container ">
     <nav id="navBar" className="navbar navbar-dark bg-dark fixed-top">
-      <a className="navbar-brand" href="#footer"> THE VALLEY OF VISION </a>
+      <a className="navbar-brand" href="#footer">SEEKING DAILY BREAD</a>
       {/* Log in*/}
       <div className="row loginMainRow">
         <div className="col-5 mr-1" style={{padding:'0px'}}>
           <label htmlFor="email" className="control-label">Email</label>
-          <input type="email" className="form-control navInput" id="email" />
+          <input type="email" className="form-control navInput" id="email"  />
         </div>
         
         <div className=" col-5 mr-1" style={{padding:'0px'}}>

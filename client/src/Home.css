@@ -1,3 +1,7 @@
+.custom-control{
+    
+}
+
 .testBackgroundColor {
     background-color: #003EFF;
 }
@@ -25,6 +29,12 @@ label {
 
 .homeQuoteP {
     margin-top: 100px;
+}
+.homeQuoteFooter {
+    font-size:30px !important;
+        margin-top: 150px;
+        font-family: covered by your grace
+
 }
 
 /* Crate New Account Section */
