@@ -1,10 +1,11 @@
 import React from 'react'
 import "./Nav.css";
+import CLOUD from "./CLOUD.png" ;
 
 export const Nav = (props) =>
   <div className="container ">
     <nav id="navBar" className="navbar navbar-dark bg-dark fixed-top">
-      <a className="navbar-brand" href="#footer">SEEKING DAILY BREAD</a>
+      <a className="navbar-brand" href="#footer">CLOUD BETHEL<img className="ml-3 mb-2" width="20%" src={CLOUD} alt=""/></a>
       {/* Log in*/}
       <div className="row loginMainRow">
         <div className="col-5 mr-1" style={{padding:'0px'}}>

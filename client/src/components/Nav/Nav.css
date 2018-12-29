@@ -30,9 +30,9 @@ button:hover {
 /*Brand logo*/
 .navbar-brand {
     font-family: 'Covered By Your Grace', cursive;
-    font-size: 47px;
-    color:gold !important;
-    
+    font-size: 54px;
+    color:#f2c063 !important;
+  
     padding: 0px;
     margin-left: 195px;
 }
@@ -44,6 +44,7 @@ button:hover {
     transition: 750ms ease;
     background-color: transparent !important;
     padding: 3px;
+    padding-top: 0px;
 }
 #navBar.scrolled {
     background-color: #ffffffeb !important;

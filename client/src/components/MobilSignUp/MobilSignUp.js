@@ -152,12 +152,12 @@ export const MobilSignUp = (props) =>
 
                         <div className="custom-control custom-radio col-8">
                             <input type="radio" id="customRadio1" name="customRadio" className="custom-control-input" />
-                            <label style={{ fontFamily: "Montserrat", fontSize: "15px", fontWeight: '600' }} className="custom-control-label" for="customRadio1"><i className="fas fa-male"></i> Male</label>
+                            <label style={{ fontFamily: "Montserrat", fontSize: "15px", fontWeight: '600' }} className="custom-control-label" htmlFor="customRadio1"><i className="fas fa-male"></i> Male</label>
                        
                             </div>
                             <div className="custom-control custom-radio col-8">
                             <input type="radio" id="customRadio2" name="customRadio" className="custom-control-input" />
-                            <label style={{ fontFamily: "Montserrat", fontSize: "15px", fontWeight: '600' }} className="custom-control-label" for="customRadio2"><i className="fas fa-female"></i> Female</label>
+                            <label style={{ fontFamily: "Montserrat", fontSize: "15px", fontWeight: '600' }} className="custom-control-label" htmlFor="customRadio2"><i className="fas fa-female"></i> Female</label>
                         </div>
                     </div>
                     
@@ -185,7 +185,7 @@ export const MobilSignUp = (props) =>
                 </div>
                 <br />
                 <div className="row text-center">
-                    <p className='col mt-5' style={{ fontSize: '10px' }}>&copy; SEEKING DAILY BREAD 2018</p>
+                    <p className='col mt-5' style={{ fontSize: '10px' }}>&copy; CLOUD BETHEL <span id="copyDate2"></span></p>
                 </div>
                 </div>
                 <div className="col d-none"></div>

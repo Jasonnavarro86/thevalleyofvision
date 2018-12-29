@@ -15,7 +15,13 @@ export class Home extends React.Component {
   }
 
   componentDidMount() {
-   $(".emailGroup")
+    var getDate = new Date();
+   $("#copyDate").html(getDate.getFullYear())
+
+   for (var i = new Date().getFullYear(); i > 1900; i--)
+    {
+        $('#year').append($('<option />').val(i).html(i));
+    }
   }
    mobilSignUp = function(){
     window.location.href = "/SignUp/cid=03";
@@ -38,8 +44,8 @@ export class Home extends React.Component {
                     <br />
                     {/*<p className="homeQuoteP"> <span style={{fontSize:'38px', fontWeight:'Bold'}}>GIVE US</span> <br/><span style={{fontFamily:'cursive', fontSize:'34px'}}> this day </span><br/><span style={{fontSize:'34px', fontWeight:'bold'}}>OUR DAILY</span><br/> <span style={{fontSize:'70px', fontFamily:'cursive'}}>Bread</span></p>*/}
       {/*<p className="homeQuoteP"> <span style={{fontSize:'28px', fontWeight:'Bold'}}>GIVE US THIS DAY OUR </span><br/> <span style={{fontSize:'40px', fontFamily:'cursive'}}> Daily Bread</span></p>*/}
-                    
-      <footer className="blockquote-footer homeQuoteFooter" style={{fontSize:'40px'}}>Matthew <cite title="Source Title">6:11</cite></footer>
+      <p className="homeQuoteP" ><em>But the one who endures to the end will be saved.</em></p>
+      <footer className="blockquote-footer homeQuoteFooter">Matthew <cite title="Source Title">24:13</cite></footer>
                   
                     </blockquote>
                 </div>
@@ -171,7 +177,7 @@ export class Home extends React.Component {
           <br />
         </div>
         <div className="row text-center">
-            <p className='col' style={{fontSize:'10px', fontFamily:'Montserrat'}}>&copy; SEEKING DAILY BREAD 2018</p>
+            <p className='col' style={{fontSize:'10px', fontFamily:'Montserrat'}}>&copy; CLOUD BETHEL <span id="copyDate"></span> </p>
             </div>
         <Footer />
       </div>

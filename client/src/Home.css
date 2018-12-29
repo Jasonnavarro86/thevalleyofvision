@@ -24,15 +24,15 @@ label {
 
 .homeQuote {
     font-family: Montserrat;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .homeQuoteP {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 .homeQuoteFooter {
     font-size:30px !important;
-        margin-top: 150px;
+        /* margin-top: 150px; */
         font-family: covered by your grace
 
 }

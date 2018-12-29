@@ -16,6 +16,12 @@ export class MobilSignUpPage extends React.Component {
 
     componentDidMount() {
         $("#MobilNavMainDiv")
+        var getDate = new Date();
+        $("#copyDate2").html(getDate.getFullYear())
+        for (var i = new Date().getFullYear(); i > 1900; i--)
+            {
+                $('#mobilYear').append($('<option />').val(i).html(i));
+            }
     }
 
     switchSignUpQuestion(groupName) {
