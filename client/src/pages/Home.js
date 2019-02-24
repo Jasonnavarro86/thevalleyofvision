@@ -177,7 +177,7 @@ export class Home extends React.Component {
           <br />
         </div>
         <div className="row text-center">
-            <p className='col' style={{fontSize:'10px', fontFamily:'Montserrat'}}>&copy; CLOUD BETHEL <span id="copyDate"></span> </p>
+            <p className='col' style={{fontSize:'10px', fontFamily:'Montserrat'}}>&copy; CORAM DEO TODAY <span id="copyDate"></span>. All rights reserved.</p>
             </div>
         <Footer />
       </div>

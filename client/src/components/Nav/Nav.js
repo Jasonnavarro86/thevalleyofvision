@@ -5,7 +5,7 @@ import "./Nav.css";
 export const Nav = (props) =>
   <div className="container ">
     <nav id="navBar" className="navbar navbar-dark bg-dark fixed-top">
-      <a className="navbar-brand" href="#footer">CLOUD BETHEL</a>
+      <a className="navbar-brand" href="#footer">CORAM DEO TODAY</a>
  {/* <img className="ml-3 mb-2" width="20%" src={CLOUD} alt=""/>*/}
       {/* Log in*/}
       <div className="row loginMainRow">
